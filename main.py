@@ -5,7 +5,7 @@ import time
 DB_NAME = "beta1-database.db"
 
 def initialize_db():
-    if not os.path.exists(DB_NAME):  # Si no existe, la crea
+    if not os.path.exists(DB_NAME):
         connection = sqlite3.connect(DB_NAME)
         cursor = connection.cursor()
         cursor.execute('''
